@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <title>Inicio - Alzahombres en Chiloé | BYB GENSET AUSTRAL</title>
+  <meta name="description" content="Alzahombres en Chiloé 2025 - ByBgenset líderes en la región. Alquiler de plataformas elevadoras de alta calidad y seguridad en Ancud, Castro y toda la X Región.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:url" content="https://bybgensetaustral.cl/">
+  <meta property="og:title" content="Inicio - Alzahombres en Chiloé | BYB GENSET AUSTRAL">
+  <meta property="og:description" content="Alzahombres en Chiloé 2025 - ByBgenset líderes en la región. Alquiler de plataformas elevadoras de alta calidad y seguridad.">
+  <meta property="og:image" content="assets/Recurso-4.webp">
+  <meta property="og:image:width" content="961">
+  <meta property="og:image:height" content="1298">
+  <meta property="og:image:alt" content="Alzahombres en Chiloé">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Inicio - Alzahombres en Chiloé | BYB GENSET AUSTRAL">
+  <meta name="twitter:description" content="Alzahombres en Chiloé 2025 - ByBgenset líderes en la región.">
+  <meta name="twitter:image" content="assets/Recurso-4.webp">
+
+  <!-- Mobile App PWA Meta -->
+  <meta name="theme-color" content="#07080D">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="BYB Alzahombres">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/webp" sizes="32x32" href="assets/cropped-Mesa-de-trabajo-2-32x32.webp">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/cropped-Mesa-de-trabajo-2-192x192.webp">
+
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Critical Asset Preloads for Instant Performance -->
+  <link rel="preload" as="image" href="assets/logo-bb-genset.png">
+  <link rel="preload" as="image" href="assets/hero-bg-poster.webp">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER & APP BAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand-logo" aria-label="BYB GENSET AUSTRAL Inicio">
+        <img src="assets/logo-bb-genset.png?v=3" alt="BYB GENSET AUSTRAL" width="280" height="48" fetchpriority="high">
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#" class="nav-link active">Inicio</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#maquinaria" class="nav-link">Maquinaria</a>
+        <a href="#faq" class="nav-link">FAQS</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <!-- Desktop Header CTA -->
+      <div class="header-cta">
+        <a href="#contacto" class="btn btn-primary btn-sm">Cotizar</a>
+      </div>
+
+      <!-- Mobile App Bar Controls -->
+      <div class="mobile-controls">
+        <a href="tel:+56983206510" class="mobile-call-btn" aria-label="Llamar a BYB Genset">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </a>
+        <button id="hamburgerBtn" class="hamburger-btn" aria-label="Abrir Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MOBILE APP DRAWER (Slide-in Menu)
+       ========================================================================== -->
+  <div id="drawerBackdrop" class="drawer-backdrop"></div>
+  <aside id="appDrawer" class="app-drawer" aria-label="Menú Móvil">
+    <div class="drawer-header">
+      <img src="assets/logo-bb-genset.png?v=3" alt="BYB Genset" width="220" height="38">
+      <button id="drawerClose" class="drawer-close" aria-label="Cerrar Menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="drawer-nav">
+      <a href="#" class="drawer-link">
+        <span>Inicio</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="#nosotros" class="drawer-link">
+        <span>Nosotros</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="#maquinaria" class="drawer-link">
+        <span>Maquinaria</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="#galeria" class="drawer-link">
+        <span>Galería de Equipos</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="#faq" class="drawer-link">
+        <span>FAQS</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="#contacto" class="drawer-link">
+        <span>Contacto</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </nav>
+
+    <div class="drawer-contact-cards">
+      <a href="tel:+56983206510" class="drawer-card-item">
+        <div class="drawer-card-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </div>
+        <div class="drawer-card-text">
+          <small>Llámanos</small>
+          <span>+56 9 8320 6510</span>
+        </div>
+      </a>
+
+      <a href="https://wa.me/56983206510?text=Hola%20BYB%20Genset,%20deseo%20cotizar%20un%20alzahombres" target="_blank" rel="noopener" class="drawer-card-item">
+        <div class="drawer-card-icon" style="background: rgba(37, 211, 102, 0.15); color: #25D366;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 2C6.5 2 2 6.5 2 12.031c0 2.125.656 4.094 1.781 5.719L2 22l4.375-1.75c1.563 1.031 3.438 1.625 5.656 1.625 5.531 0 10.031-4.5 10.031-10.031C22.062 6.5 17.562 2 12.031 2zm5.781 14.188c-.25.688-1.406 1.344-1.969 1.406-.531.063-1.219.094-1.969-.156-.469-.156-1.063-.375-1.844-.719-3.281-1.438-5.406-4.75-5.563-4.969-.156-.219-1.313-1.75-1.313-3.344 0-1.594.844-2.375 1.156-2.688.313-.313.688-.406.938-.406.25 0 .469 0 .688.031.219.031.531-.094.813.625.313.719 1.063 2.594 1.156 2.781.094.188.156.406.031.625-.125.219-.188.375-.375.594-.188.219-.406.469-.594.656-.219.219-.438.469-.188.875.25.438 1.094 1.813 2.375 2.938 1.625 1.438 3 1.906 3.438 2.125.438.219.688.188.938-.094.25-.313 1.063-1.25 1.344-1.688.281-.438.563-.375.938-.219.406.156 2.563 1.219 3 1.438.438.219.75.344.844.531.094.188.094 1.094-.156 1.781z"/>
+          </svg>
+        </div>
+        <div class="drawer-card-text">
+          <small>WhatsApp Directo</small>
+          <span>Chat Inmediato</span>
+        </div>
+      </a>
+
+      <div class="drawer-card-item">
+        <div class="drawer-card-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        </div>
+        <div class="drawer-card-text">
+          <small>Ubicación</small>
+          <span>Ancud, Chiloé (X Región)</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+  -->
+  <section class="hero-section" id="inicio">
+    <div class="hero-bg-media">
+      <img src="assets/hero-bg.webp" 
+           alt="Alzahombres en Chiloé - BYB Genset" 
+           width="1920" 
+           height="1080" 
+           fetchpriority="high"
+           onerror="this.src='assets/hero-bg-poster.webp'">
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="status-dot"></span>
+          Bienvenido
+        </div>
+        <h1 class="hero-title">
+          Alzahombres en <span>Chiloé</span>
+        </h1>
+        <p class="hero-description">
+          Ofrecemos alquiler de plataformas elevadoras (alzahombres) de alta calidad y seguridad. Soluciones eficientes para tus proyectos en altura en la X Región
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary">
+            <span>Cotizar</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#maquinaria" class="btn btn-outline">
+            <span>Ver Maquinaria</span>
+          </a>
+          <a href="https://wa.me/56983206510?text=Hola%20BYB%20Genset,%20quisiera%20cotizar%20un%20alzahombres" target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 2C6.5 2 2 6.5 2 12.031c0 2.125.656 4.094 1.781 5.719L2 22l4.375-1.75c1.563 1.031 3.438 1.625 5.656 1.625 5.531 0 10.031-4.5 10.031-10.031C22.062 6.5 17.562 2 12.031 2z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="hero-features">
+          <div class="hero-feat-item">
+            <div class="hero-feat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div class="hero-feat-text">
+              <h5>Seguridad Total</h5>
+              <p>Equipos certificados</p>
+            </div>
+          </div>
+
+          <div class="hero-feat-item">
+            <div class="hero-feat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </div>
+            <div class="hero-feat-text">
+              <h5>Entrega en Obra</h5>
+              <p>Cobertura en toda la isla</p>
+            </div>
+          </div>
+
+          <div class="hero-feat-item">
+            <div class="hero-feat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div class="hero-feat-text">
+              <h5>3+ Años Líderes</h5>
+              <p>En la X Región</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       NOSOTROS (About) SECTION
+       ========================================================================== -->
+  <section class="about-section" id="nosotros">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text-col">
+          <div class="section-badge">Sobre nosotros</div>
+          <h2 class="section-title">
+            Conoce a BYB GENSET AUSTRAL Alzahombres en Chiloé
+          </h2>
+          <p class="section-desc" style="margin-bottom: 24px;">
+            En BYB GENSET AUSTRAL SPA nos especializamos en el alquiler de plataformas elevadoras (alzahombres) para proyectos en altura. Con 3 años de experiencia, ofrecemos soluciones seguras y eficientes para satisfacer las necesidades de nuestros clientes. Nuestro compromiso es brindar un servicio de calidad con equipos de última tecnología. Estamos ubicados en Ancud, Chiloé, y atendemos de lunes a viernes
+          </p>
+
+          <div class="about-highlights">
+            <div class="about-hl-box">
+              <h4>Maquinaria de Vanguardia</h4>
+              <p>Plataformas articuladas y de tijera en constante mantenimiento preventivo.</p>
+            </div>
+            <div class="about-hl-box">
+              <h4>Compromiso Local</h4>
+              <p>Atención directa en Ancud, Castro, Chonchi, Quellón y alrededores.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-image-col">
+          <div class="about-image-card">
+            <img src="assets/0abed4cb-7997-4606-b936-0aea99eb9607.jpg" 
+                 alt="Alzahombres en Chiloé - Flota BYB Genset" 
+                 loading="lazy" 
+                 decoding="async" 
+                 width="960" 
+                 height="1280">
+            <div class="about-floating-badge">
+              <div class="badge-number">3+</div>
+              <div class="badge-text">
+                Años de Experiencia<br>Comprobada
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MISIÓN & VISIÓN SECTION
+       ========================================================================== -->
+  <section class="mision-section">
+    <div class="mision-bg-media">
+      <img src="assets/mision-bg.webp" alt="Industrial Grid" loading="lazy" decoding="async" onerror="this.src='assets/mision-bg-poster.webp'">
+    </div>
+    <div class="mision-overlay"></div>
+
+    <div class="container mision-content">
+      <div class="mision-header">
+        <div>
+          <div class="section-badge">Nuestros Principios</div>
+          <h2 class="section-title" style="margin-bottom: 0;">Revisa nuestra maquinaria</h2>
+        </div>
+        <a href="#modelos" class="btn btn-outline">
+          <span>Ver modelos</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </div>
+
+      <div class="mision-cards-grid">
+        <div class="mision-card">
+          <div class="mision-card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <h4>Misión</h4>
+          <p>
+            En BYB GENSET AUSTRAL SPA nos dedicamos a proporcionar soluciones eficientes y seguras en altura a través del alquiler de plataformas elevadoras. Nuestro compromiso es ofrecer equipos de calidad, respaldados por un servicio al cliente excepcional que garantice la satisfacción de nuestros usuarios.
+          </p>
+        </div>
+
+        <div class="mision-card">
+          <div class="mision-card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <h4>Visión</h4>
+          <p>
+            Ser la empresa líder en el alquiler de plataformas elevadoras en la X Región, reconocida por nuestra innovación, confiabilidad y excelencia en el servicio, contribuyendo al éxito de nuestros clientes en proyectos de altura.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MODELOS & MAQUINARIA SECTION
+       ========================================================================== -->
+  <section class="models-section" id="modelos">
+    <div class="container" id="maquinaria">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+        <div class="section-badge">Modelos</div>
+        <h2 class="section-title">Descubre nuestro catálogo.</h2>
+        <p class="section-desc" style="margin: 0 auto;">
+          Equipos certificados para obras civiles, montajes, faenas industriales, electricidad y mantenimiento en altura.
+        </p>
+      </div>
+
+      <div class="models-grid">
+        <!-- Model Card 1 -->
+        <article class="model-card">
+          <div class="model-img-wrapper">
+            <span class="model-spec-badge">8 Metros</span>
+            <img src="assets/Captura-de-pantalla-2025-03-29-013512.png" 
+                 alt="ELEVADOR GENIE 8 METROS 1930" 
+                 loading="lazy" 
+                 decoding="async"
+                 width="400"
+                 height="300">
+          </div>
+          <div class="model-body">
+            <h3>ELEVADOR GENIE 8 METROS 1930</h3>
+            <div class="model-specs-list">
+              <span class="spec-tag">⚡ Eléctrico</span>
+              <span class="spec-tag">📏 7.79 m Trabajo</span>
+              <span class="spec-tag">⚖️ 227 kg Capacidad</span>
+              <span class="spec-tag">🏢 Interior / Exterior</span>
+            </div>
+            <div class="model-actions">
+              <a href="assets/ELEVADOR-GENIE-8-METROS-1930.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Ficha Técnica</span>
+              </a>
+              <a href="https://wa.me/56983206510?text=Hola,%20quisiera%20cotizar%20el%20ELEVADOR%20GENIE%208%20METROS%201930" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <span>Cotizar</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Model Card 2 -->
+        <article class="model-card">
+          <div class="model-img-wrapper">
+            <span class="model-spec-badge">12 Metros</span>
+            <img src="assets/Genie-GS3246-04.jpg" 
+                 alt="ELEVADOR GENIE 12 METROS 3246" 
+                 loading="lazy" 
+                 decoding="async"
+                 width="400"
+                 height="300">
+          </div>
+          <div class="model-body">
+            <h3>ELEVADOR GENIE 12 METROS 3246</h3>
+            <div class="model-specs-list">
+              <span class="spec-tag">⚡ Baterías Ciclo Profundo</span>
+              <span class="spec-tag">📏 11.75 m Trabajo</span>
+              <span class="spec-tag">⚖️ 318 kg Capacidad</span>
+              <span class="spec-tag">📐 Extensión 0.91m</span>
+            </div>
+            <div class="model-actions">
+              <a href="assets/ELEVADOR-GENIE-12-METROS-3246.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Ficha Técnica</span>
+              </a>
+              <a href="https://wa.me/56983206510?text=Hola,%20quisiera%20cotizar%20el%20ELEVADOR%20GENIE%2012%20METROS%203246" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <span>Cotizar</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Model Card 3 -->
+        <article class="model-card">
+          <div class="model-img-wrapper">
+            <span class="model-spec-badge">Articulado 4x4</span>
+            <img src="assets/descarga.jpeg" 
+                 alt="Elevador articulado 12 metros" 
+                 loading="lazy" 
+                 decoding="async"
+                 width="400"
+                 height="300">
+          </div>
+          <div class="model-body">
+            <h3>Elevador articulado 12 metros</h3>
+            <div class="model-specs-list">
+              <span class="spec-tag">🚜 Tracción 4x4</span>
+              <span class="spec-tag">📏 12.2 m Trabajo</span>
+              <span class="spec-tag">🔄 Brazo Articulado</span>
+              <span class="spec-tag">🌲 Todo Terreno</span>
+            </div>
+            <div class="model-actions">
+              <a href="assets/HR10_12-Operating-Safety-Manual-Elevador-verde.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Ficha Técnica</span>
+              </a>
+              <a href="https://wa.me/56983206510?text=Hola,%20quisiera%20cotizar%20el%20Elevador%20articulado%2012%20metros" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <span>Cotizar</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       NUEVA GALERÍA GENIAL SIN TÍTULO (Solicitada explícitamente: SIN TÍTULO)
+       Showcase puro con las 9 imágenes de C:\Users\NOWEB  DESKTOP\Downloads\BYB\Imgens
+       ========================================================================== -->
+  <section class="gallery-section-pure" id="galeria">
+    <div class="container">
+      <div class="gallery-bento-grid">
+        <!-- Item 0 -->
+        <div class="gallery-item-bento" data-index="0" role="button" tabindex="0" aria-label="Ver imagen ampliada: Operación en Altura - Chiloé">
+          <img src="assets/gallery/thumb_gallery_01_0abed4cb-7997-4606-b936-0aea99eb9607.webp" alt="Operación en Altura - Chiloé" loading="lazy" decoding="async">
+          <div class="gallery-bento-overlay">
+            <div class="gallery-overlay-meta">
+              <h4>Operación en Altura - Chiloé</h4>
+              <span>Plataforma Elevadora en Faena</span>
+            </div>
+            <div class="gallery-zoom-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 1 -->
+        <div class="gallery-item-bento" data-index="1" role="button" tabindex="0" aria-label="Ver imagen ampliada: Plataforma Articulada en Terreno">
+          <img src="assets/gallery/thumb_gallery_02_3e45cc72-0374-4722-a287-5f732d7c4372.webp" alt="Plataforma Articulada en Terreno" loading="lazy" decoding="async">
+          <div class="gallery-bento-overlay">
+            <div class="gallery-overlay-meta">
+              <h4>Plataforma Articulada en Terreno</h4>
+              <span>Alcance y Precisión Superior</span>
+            </div>
+            <div class="gallery-zoom-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item-bento" data-index="2" role="button" tabindex="0" aria-label="Ver imagen ampliada: Trabajos Industriales Seguros">
+          <img src="assets/gallery/thumb_gallery_03_564cf5e6-d73f-4847-b4b2-4ea0df59817f.webp" alt="Trabajos Industriales Seguros" loading="lazy" decoding="async">
+          <div class="gallery-bento-overlay">
+            <div class="gallery-overlay-meta">
+              <h4>Trabajos Industriales Seguros</h4>
+              <span>Máxima Estabilidad Certificada</span>
+            </div>
+            <div class="gallery-zoom-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-item-bento" data-index="3" role="button" tabindex="0" aria-label="Ver imagen ampliada: Articulado 12 Metros 4x4">
+          <img src="assets/gallery/thumb_gallery_04_articulado_12_metros_4x4_electricos_y_diesel.webp" alt="Articulado 12 Metros 4x4" loading="lazy" decoding="async">
+          <div class="gallery-bento-overlay">
+            <div class="gallery-overlay-meta">
+              <h4>Articulado 12 Metros 4x4</h4>
+              <span>Eléctrico y Diésel Todo Terreno</span>
+            </div>
+            <div class="gallery-zoom-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="gallery-item-bento" data-index="4" role="button" tabindex="0" aria-label="Ver imagen ampliada: Articulados 4x4 Diésel 18 Metros">
+          <img src="assets/gallery/thumb_gallery_05_articulados_4x4_diesel_18_metros.webp" alt="Articulados 4x4 Diésel 18 Metros" loading="lazy" decoding="async">
+          <div class="gallery-bento-overlay">
+            <div class="gallery-overlay-meta">
+              <h4>Articulados 4x4 Diésel 18 Metros</h4>
+              <span>Gran Altura y Capacidad de Carga</span>
+            </div>
+            <div class="gallery-zoom-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-item-bento" data-index="5" role="button" tabindex="0" aria-label="Ver imagen ampliada: Maniobrabilidad y Alcance">
+          <img src="assets/gallery/thumb_gallery_06_bc1fc172-8c2a-4465-8c49-76f1e163a082.webp" alt="Maniobrabilidad y Alcance" loading="lazy" decoding="async">
+          <div class="gallery-bento-overlay">
+            <div class="gallery-overlay-meta">
+              <h4>Maniobrabilidad y Alcance</h4>
+              <span>Operaciones en Espacios Reducidos</span>
+            </div>
+            <div class="gallery-zoom-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="gallery-item-bento" data-index="6" role="button" tabindex="0" aria-label="Ver imagen ampliada: Flota BYB Genset Austral">
+          <img src="assets/gallery/thumb_gallery_07_cf40dfae-e092-46c7-92f4-8090aca424d7.webp" alt="Flota BYB Genset Austral" loading="lazy" decoding="async">
+          <div class="gallery-bento-overlay">
+            <div class="gallery-overlay-meta">
+              <h4>Flota BYB Genset Austral</h4>
+              <span>Equipos de Última Generación</span>
+            </div>
+            <div class="gallery-zoom-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="gallery-item-bento" data-index="7" role="button" tabindex="0" aria-label="Ver imagen ampliada: Mantenimiento y Montaje">
+          <img src="assets/gallery/thumb_gallery_08_f084ba38-6d11-4c1e-a264-305694490a4f.webp" alt="Mantenimiento y Montaje" loading="lazy" decoding="async">
+          <div class="gallery-bento-overlay">
+            <div class="gallery-overlay-meta">
+              <h4>Mantenimiento y Montaje</h4>
+              <span>Soluciones Confiables en Altura</span>
+            </div>
+            <div class="gallery-zoom-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="gallery-item-bento" data-index="8" role="button" tabindex="0" aria-label="Ver imagen ampliada: Equipamiento Certificado">
+          <img src="assets/gallery/thumb_gallery_09_f6607040-7bd8-4694-a186-5ace799e041a.webp" alt="Equipamiento Certificado" loading="lazy" decoding="async">
+          <div class="gallery-bento-overlay">
+            <div class="gallery-overlay-meta">
+              <h4>Equipamiento Certificado</h4>
+              <span>Disponibilidad Inmediata en Ancud</span>
+            </div>
+            <div class="gallery-zoom-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LIGHTBOX MODAL (App-Feel Gestures)
+       ========================================================================== -->
+  <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Visor de Imagen">
+    <div class="lightbox-topbar">
+      <div id="lightboxCounter" class="lightbox-counter">1 / 9</div>
+      <button id="lightboxClose" class="lightbox-close-btn" aria-label="Cerrar">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <div class="lightbox-viewport">
+      <button id="lightboxPrev" class="lightbox-arrow lightbox-arrow-left" aria-label="Imagen anterior">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+
+      <img id="lightboxImage" class="lightbox-image" src="" alt="Vista previa de equipo">
+
+      <button id="lightboxNext" class="lightbox-arrow lightbox-arrow-right" aria-label="Imagen siguiente">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+    </div>
+
+    <div class="lightbox-bottombar">
+      <div id="lightboxTitle" class="lightbox-title">Operación en Altura - Chiloé</div>
+      <a id="lightboxWhatsAppBtn" href="#" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.031 2C6.5 2 2 6.5 2 12.031c0 2.125.656 4.094 1.781 5.719L2 22l4.375-1.75c1.563 1.031 3.438 1.625 5.656 1.625 5.531 0 10.031-4.5 10.031-10.031C22.062 6.5 17.562 2 12.031 2z"/>
+        </svg>
+        <span>Cotizar este equipo</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ¿POR QUÉ ELEGIRNOS? SECTION
+       ========================================================================== -->
+  <section class="why-section">
+    <div class="container">
+      <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+        <div class="section-badge">¿Por qué elegirnos?</div>
+        <h2 class="section-title">
+          Soluciones en Altura<br>Tu Socio de Confianza
+        </h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <div class="why-body">
+            <h4>Experiencia Comprobada</h4>
+            <p>Con 3 años de trayectoria, entendemos las necesidades de nuestros clientes y nos adaptamos a cada proyecto.</p>
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="why-body">
+            <h4>Compromiso con la Seguridad</h4>
+            <p>Priorizar la seguridad de nuestros clientes es nuestra máxima, con equipos que cumplen con los estándares más rigurosos.</p>
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <div class="why-body">
+            <h4>Servicio Personalizado</h4>
+            <p>Brindamos atención personalizada para ofrecer las mejores soluciones adaptadas a tus necesidades.</p>
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+          </div>
+          <div class="why-body">
+            <h4>Soporte Confiable</h4>
+            <p>Estamos disponibles para responder tus dudas y asegurar que tu experiencia con nosotros sea la mejor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PREGUNTAS FRECUENTES (FAQS) SECTION
+       ========================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+        <div class="section-badge">Preguntas frecuentes</div>
+        <h2 class="section-title">Preguntas Frecuentes (FAQs)</h2>
+      </div>
+
+      <div class="faq-accordion-list">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>¿Qué tipos de plataformas elevadoras ofrecen?</h3>
+            <div class="faq-chevron">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              Ofrecemos plataformas elevadoras de diferentes tamaños y capacidades para adaptarnos a las necesidades específicas de tu proyecto. Desde plataformas articuladas hasta tijeras, tenemos la opción ideal para ti.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>¿Cómo puedo alquilar una plataforma elevadora?</h3>
+            <div class="faq-chevron">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              Puedes alquilar nuestra plataforma elevadora contactándonos a través de nuestro teléfono +56 9 8320 6510 o por correo electrónico a contactobybgensetaustral.cl. También puedes visitar nuestra oficina en Ancud, Chiloé.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>¿Cuáles son los requisitos para alquilar una plataforma elevadora?</h3>
+            <div class="faq-chevron">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              Solo necesitas tener un proyecto que requiera el uso de una plataforma elevadora y cumplir con las normas de seguridad. Nuestro equipo te proporcionará toda la orientación necesaria para garantizar un uso adecuado.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>¿Cuánto tiempo puedo alquilar una plataforma elevadora?</h3>
+            <div class="faq-chevron">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              El alquiler se ajusta a tus necesidades, ya sea por un día, una semana o más tiempo. Ofrecemos planes flexibles para que puedas alquilar según la duración de tu proyecto.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>¿Ofrecen servicio de entrega y recogida?</h3>
+            <div class="faq-chevron">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              Sí, nos encargamos de la entrega y recogida de las plataformas elevadoras en el lugar que nos indiques, garantizando que el proceso sea cómodo y sin inconvenientes.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>¿Qué medidas de seguridad siguen en el alquiler de las plataformas?</h3>
+            <div class="faq-chevron">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              Todas nuestras plataformas elevadoras son inspeccionadas y cumplen con las normativas de seguridad. Además, ofrecemos capacitación sobre el uso seguro de los equipos y asesoramiento continuo durante el alquiler.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       COTIZACIÓN & CONTACTO SECTION
+       ========================================================================== -->
+  <section class="contact-section" id="contacto">
+    <div class="contact-bg-media">
+      <img src="assets/freepik__the-style-is-candid-image-photography-with-natural__39269.jpeg" alt="Fondo Contacto" loading="lazy" decoding="async">
+    </div>
+
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form Side -->
+        <div class="contact-form-card">
+          <div class="section-badge">Cotización y Contacto</div>
+          <h2 class="section-title" style="font-size: clamp(24px, 3.2vw, 36px);">
+            ¿Listo para alquilar una plataforma elevadora?
+          </h2>
+          <p class="section-desc" style="margin-bottom: 28px; font-size: 15px;">
+            Solicitar una cotización es fácil y rápido. Simplemente completa el formulario a continuación o contáctanos directamente a través de nuestras opciones de comunicación. Estaremos encantados de proporcionarte la mejor solución según tus necesidades.
+          </p>
+
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Nombre</label>
+                <input type="text" id="form-name" name="name" class="form-control" placeholder="Escriba su nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="form-empresa" class="form-label">Empresa</label>
+                <input type="text" id="form-empresa" name="empresa" class="form-control" placeholder="Nombre de su empresa" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-whatsapp" class="form-label">Whatsapp</label>
+                <input type="tel" id="form-whatsapp" name="whatsapp" class="form-control" placeholder="Escriba su Whatsapp" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email</label>
+                <input type="email" id="form-email" name="email" class="form-control" placeholder="Escriba su correo" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="form-asunto" class="form-label">Asunto</label>
+              <input type="text" id="form-asunto" name="asunto" class="form-control" placeholder="Detalle el asunto" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Mensaje de cotización</label>
+              <textarea id="form-message" name="message" class="form-control" rows="4" placeholder="Detalle lo que necesita cotizar."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Enviar Cotización</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info Side -->
+        <div class="contact-info-panel">
+          <div>
+            <h3 style="font-size: 26px; font-weight: 800; color: #FFFFFF; line-height: 1.25; margin-bottom: 12px;">
+              ¡Te esperamos para hacer tu próximo proyecto más fácil y seguro!
+            </h3>
+            <div style="width: 60px; height: 3px; background: var(--color-primary); margin-bottom: 24px; border-radius: 2px;"></div>
+
+            <div class="contact-info-list">
+              <!-- Location -->
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-info-text">
+                  <small>Visítanos</small>
+                  <p>Aníbal Pinto 1701, Ancud, Chiloé</p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-info-text">
+                  <small>Envíanos un correo</small>
+                  <a href="mailto:bybgenset@gmail.com">bybgenset@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="contact-info-text">
+                  <small>Llámanos</small>
+                  <a href="tel:+56983206510">+56 9 8320 6510</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.08); display: flex; align-items: center; justify-content: space-between;">
+            <span style="font-size: 13px; color: var(--color-text-dim);">Lunes a Viernes · Horario Continuado</span>
+            <img src="assets/memphis_2.png" alt="" width="32" height="32" style="opacity: 0.4;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#" class="footer-logo">
+          <img src="assets/logo-bb-genset.png?v=3" alt="BYB GENSET AUSTRAL" width="256" height="44" loading="lazy">
+        </a>
+
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61570362707880" target="_blank" rel="noopener" class="social-pill" aria-label="Facebook BYB Genset">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            <span>Facebook</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          <span>Copyright © 2025 bygensetaustral.cl · Todos los derechos reservados</span>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/noweb.dev" target="_blank" rel="noopener" class="footer-agency" title="Instagram @noweb.dev">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span>Desarrollado por <strong>@noweb.dev</strong></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MOBILE BOTTOM APP BAR (Dock de Navegación Nativo)
+       ========================================================================== -->
+  <nav class="mobile-bottom-bar" aria-label="Barra de Navegación App">
+    <div class="bottom-bar-inner">
+      <a href="#inicio" class="bottom-tab active" data-target="inicio">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span>Inicio</span>
+      </a>
+
+      <a href="#modelos" class="bottom-tab" data-target="modelos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+        <span>Modelos</span>
+      </a>
+
+      <!-- Elevated Center Tab: WhatsApp -->
+      <a href="https://wa.me/56983206510?text=Hola%20BYB%20Genset,%20deseo%20cotizar%20un%20alzahombres" target="_blank" rel="noopener" class="bottom-tab bottom-tab-center" aria-label="Cotizar por WhatsApp">
+        <div class="center-pill">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 2C6.5 2 2 6.5 2 12.031c0 2.125.656 4.094 1.781 5.719L2 22l4.375-1.75c1.563 1.031 3.438 1.625 5.656 1.625 5.531 0 10.031-4.5 10.031-10.031C22.062 6.5 17.562 2 12.031 2z"/>
+          </svg>
+        </div>
+        <span>Cotizar</span>
+      </a>
+
+      <a href="#galeria" class="bottom-tab" data-target="galeria">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+        <span>Galería</span>
+      </a>
+
+      <a href="#contacto" class="bottom-tab" data-target="contacto">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        <span>Contacto</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       FLOATING WHATSAPP BUTTON (Desktop & Tablet)
+       ========================================================================== -->
+  <a href="https://wa.me/56983206510?text=Hola%20BYB%20Genset,%20deseo%20cotizar%20un%20alzahombres" 
+     target="_blank" 
+     rel="noopener" 
+     class="floating-whatsapp" 
+     aria-label="Contactar por WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 2C6.5 2 2 6.5 2 12.031c0 2.125.656 4.094 1.781 5.719L2 22l4.375-1.75c1.563 1.031 3.438 1.625 5.656 1.625 5.531 0 10.031-4.5 10.031-10.031C22.062 6.5 17.562 2 12.031 2zm5.781 14.188c-.25.688-1.406 1.344-1.969 1.406-.531.063-1.219.094-1.969-.156-.469-.156-1.063-.375-1.844-.719-3.281-1.438-5.406-4.75-5.563-4.969-.156-.219-1.313-1.75-1.313-3.344 0-1.594.844-2.375 1.156-2.688.313-.313.688-.406.938-.406.25 0 .469 0 .688.031.219.031.531-.094.813.625.313.719 1.063 2.594 1.156 2.781.094.188.156.406.031.625-.125.219-.188.375-.375.594-.188.219-.406.469-.594.656-.219.219-.438.469-.188.875.25.438 1.094 1.813 2.375 2.938 1.625 1.438 3 1.906 3.438 2.125.438.219.688.188.938-.094.25-.313 1.063-1.25 1.344-1.688.281-.438.563-.375.938-.219.406.156 2.563 1.219 3 1.438.438.219.75.344.844.531.094.188.094 1.094-.156 1.781z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/app.js" defer></script>
+</body>
+</html>

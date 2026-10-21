@@ -1,0 +1,24 @@
+{
+  "name": "BYB Genset Austral - Alzahombres",
+  "short_name": "BYB Alzahombres",
+  "description": "Alquiler de plataformas elevadoras (alzahombres) en Chiloé y la X Región.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#090a0f",
+  "theme_color": "#090a0f",
+  "icons": [
+    {
+      "src": "assets/cropped-Mesa-de-trabajo-2-192x192.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/cropped-Mesa-de-trabajo-2-270x270.webp",
+      "sizes": "270x270",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}

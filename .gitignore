@@ -1,0 +1,7 @@
+# Archivos temporales y de respaldo
+*.tmp
+*.log
+original_site.html
+
+# Archivos multimedia gigantes no utilizados (reemplazados por WebP optimizados)
+assets/*.gif
