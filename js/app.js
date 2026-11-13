@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
       lbCounter.textContent = `${currentImageIdx + 1} / ${galleryItems.length}`;
       lbTitle.textContent = item.title;
       const msg = encodeURIComponent(`Hola BYB Genset Austral, deseo cotizar el equipo: ${item.title}`);
-      lbWhatsAppBtn.href = `https://wa.me/56983206510?text=${msg}`;
+      lbWhatsAppBtn.href = `https://wa.me/56996342153?text=${msg}`;
       lbImg.style.opacity = '1';
     }, 150);
   }
@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       showToast('¡Cotización enviada con éxito! Redirigiendo a WhatsApp...');
       setTimeout(() => {
-        window.open(`https://wa.me/56983206510?text=${text}`, '_blank');
+        window.open(`https://wa.me/56996342153?text=${text}`, '_blank');
       }, 700);
     });
   }

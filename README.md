@@ -21,7 +21,7 @@ Sitio web corporativo y experiencia web ultra rápida para **BYB GENSET AUSTRAL 
   - Botón de cotización directa por WhatsApp vinculado a cada modelo de la galería.
 - **Cotización y Contacto**:
   - Formulario conectado directamente a la API de WhatsApp con mensaje preformateado.
-  - Información de contacto: Aníbal Pinto 1701, Ancud, Chiloé · +56 9 8320 6510 · bybgenset@gmail.com.
+  - Información de contacto: Aníbal Pinto 1701, Ancud, Chiloé · +56 9 9634 2153 (Max Bergmann) · +56 9 9570 1746 (Guillermo Barrientos) · bybgenset@gmail.com.
 
 ---
 

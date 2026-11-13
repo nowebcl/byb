@@ -5,11 +5,8 @@ const ASSETS_TO_CACHE = [
   '/css/style.css',
   '/js/app.js',
   '/manifest.json',
-  '/assets/logo-bb-genset.png',
-  '/assets/logo-bb-genset.webp',
   '/assets/Recurso-2-scaled.webp',
   '/assets/Recurso-1-scaled.webp',
-  '/assets/Recurso-18-scaled.webp',
   '/assets/0abed4cb-7997-4606-b936-0aea99eb9607.jpg',
   '/assets/Captura-de-pantalla-2025-03-29-013512.png',
   '/assets/Genie-GS3246-04.jpg',
@@ -36,6 +33,14 @@ self.addEventListener('activate', (e) => {
 
 self.addEventListener('fetch', (e) => {
   e.respondWith(
-    caches.match(e.request).then((res) => res || fetch(e.request))
+    fetch(e.request)
+      .then((res) => {
+        if (res && res.status === 200 && res.type === 'basic') {
+          const clone = res.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(e.request, clone));
+        }
+        return res;
+      })
+      .catch(() => caches.match(e.request, { ignoreSearch: true }))
   );
 });
