@@ -321,6 +321,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- 9. Progressive Web App (PWA) Offline Service Worker ---
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').catch(() => {});
+    navigator.serviceWorker.register('sw.js').then((reg) => reg.update()).catch(() => {});
   }
 });
